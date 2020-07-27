@@ -1,24 +1,22 @@
 {
-  "name": "cypress-reservation",
+  "name": "selenium-reservation",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "cypress:open": "cypress open"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nomelancholy/cypress-reservation.git"
+    "url": "git+https://github.com/nomelancholy/selenium-reservation.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nomelancholy/cypress-reservation/issues"
+    "url": "https://github.com/nomelancholy/selenium-reservation/issues"
   },
-  "homepage": "https://github.com/nomelancholy/cypress-reservation#readme",
+  "homepage": "https://github.com/nomelancholy/selenium-reservation#readme",
   "dependencies": {
-    "nightwatch": "^1.3.7",
     "selenium-webdriver": "^4.0.0-alpha.7"
   },
   "devDependencies": {
