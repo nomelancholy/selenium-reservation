@@ -1,4 +1,5 @@
 const { Builder, By, Key, until } = require("selenium-webdriver");
+require('dotenv').config();
 
 async function ticketlink() {
   let driver = await new Builder().forBrowser("chrome").build();
@@ -18,7 +19,7 @@ async function ticketlink() {
       }
     }
     
-    await driver.findElement(By.id('id')).sendKeys('abcd', Key.RETURN);
+    await driver.findElement(By.id('id')).sendKeys(`${process.env.TL_ID}`, Key.RETURN);
 
     // console.log('windows[0]', windows[0])
 

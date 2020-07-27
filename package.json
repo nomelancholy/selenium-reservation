@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ticketlink": "node -r dotenv/config index.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/nomelancholy/selenium-reservation#readme",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "selenium-webdriver": "^4.0.0-alpha.7"
   },
   "devDependencies": {
