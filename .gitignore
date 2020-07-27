@@ -1,2 +1,3 @@
 node_modules/
-chromdriver.log
+chromedriver.log
+debug.log
