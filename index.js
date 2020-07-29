@@ -32,6 +32,10 @@ async function ticketlink() {
     // driver switch to hompage
     await driver.switchTo().window(homepage);
 
+    // To-Do
+
+    // 예매 시간이 될 때 까지 대기하는 로직 추가
+
     // click reservation button
     let reserveStartButtons = await driver.findElements(
       By.className("btn_reserve")
