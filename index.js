@@ -47,7 +47,7 @@ async function ticketlink() {
       }
     }
 
-    // 좌석 클릭
+    // 좌석 메뉴 클릭
     await driver
       .findElement(By.xpath("//*[text()[contains(.,'VIP석')]]"))
       .click();
@@ -55,15 +55,19 @@ async function ticketlink() {
       .findElement(By.xpath("//*[text()[contains(.,'VIP2구역')]]"))
       .click();
 
-    // className이 reserve_next3 에서 reserve_next2로 바뀔때까지 (좌석 클릭할 때 까지) 기다리다 순서 진행
+    // await driver
+    //   .findElement(By.xpath("//*[text()[contains(.,'S석')]]"))
+    //   .click();
+    // await driver
+    //   .findElement(By.xpath("//*[text()[contains(.,'VIP2구역')]]"))
+    //   .click();
 
-    let disabledNextButton = await driver.findElement(By.css(".reserve_next3"));
+    // 좌석 클릭할 때 까지 기다렸다 진행
 
-    await driver.wait(() => {
-      // to do - add until by condition
-    },3000);
+    await driver.wait(until.elementLocated(By.className("reserve_next2")));
+    await driver.findElement(By.className('reserve_next2')).click();
 
-    await driver.findElement(By.css(".reserve_next2")).click();
+
   } catch (error) {
     console.log("error", error);
   } finally {
