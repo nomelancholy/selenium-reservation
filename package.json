@@ -24,5 +24,6 @@
   "devDependencies": {
     "chromedriver": "^84.0.1",
     "selenium-server": "^3.141.59"
-  }
+  },
+  "type": "module"
 }
